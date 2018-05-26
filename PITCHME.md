@@ -1,40 +1,35 @@
 
-# Mobx with React(Sample)
+# Test for React
 
 ---
 
-### ReactとMobxをどう組み合わせればいいんでしょうか
-
-### Sampleコードを見ていきましょう
-https://github.com/mobxjs/mobx-react-todomvc
-
-
----
-
-### View
+## はじめに
 
 ---
 
 
-### Model
+## なぜテストするのか
 
-+++?code=TodoModel.js
+xxxx
 
-#### ToDOModel.js
+---
 
-aaaaaaaa
+## 何をテストするのか
+
+
+---
+
+### jest?
+
 
 +++
 
-### 下のスライド
+> Facebook製のテストフレームワーク
 
 ---
 
-
-### Controller
-
+### デモ
 
 ---
-
 
 ### おわり
