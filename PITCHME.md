@@ -33,13 +33,15 @@ Facebook製のJavaScriptのテストツール。
 
 ### スペックテスト
 
-+++
-
-#### Viewのテスト
 
 +++
 
 #### Storeのテスト
+
+
++++
+
+#### Viewのテスト
 
 ---
 
@@ -49,6 +51,30 @@ Facebook製のJavaScriptのテストツール。
 ---
 
 ### スナップショットテスト
+
+
++++
+
++ 最初に実行したテストのアウトプットが保存され、二回目以降のテストは以前のスナップショットとの比較して一致していれば通過する。
+
+
++++
+
+```javascript
+// Updated test case with a Link to a different address
+it('renders correctly', () => {
+  const tree = renderer
+    .create(<Link page="http://www.instagram.com">Instagram</Link>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+```
+
+
+
++++
+
+![スナップショット画面](https://facebook.github.io/jest/img/content/failedSnapshotTest.png)
 
 ---
 
