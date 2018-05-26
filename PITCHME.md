@@ -35,8 +35,27 @@ Reactを
 
 +++
 
-#### Storeのテスト
+#### ロジックのテスト
 
+##### テスト対象
+
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+module.exports = sum;
+```
+
+##### テストコード
+
+
+```javascript
+const sum = require('./sum');
+
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});
+```
 
 +++
 
