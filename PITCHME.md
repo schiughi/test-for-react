@@ -63,13 +63,18 @@ Reactを
 
 +++
 
+#### 例
+
+
+
++++
+
 #### コード
 
 ```javascript
-// Updated test case with a Link to a different address
 it('renders correctly', () => {
   const tree = renderer
-    .create(<Link page="http://www.instagram.com">Instagram</Link>)
+    .create(<LinkToHome />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
