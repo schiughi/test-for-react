@@ -103,10 +103,19 @@ jest --updateSnapshot
 + 実はUIだけでなく、JavaScriptのobjectのスナップショットテストも可能
 + スナップショットもGit管理する必要があるので、コンフリクトは心配かも？
 
+
 ---
 
 
 ### デモ
+
+---
+
+
+### 参考
+
+https://benmccormick.org/2016/09/19/testing-with-jest-snapshots-first-impressions/
+
 
 ---
 
