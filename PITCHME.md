@@ -25,8 +25,8 @@ Reactを
 ### Jest でできること
 
 * describe, expect のスペックテスト |
-* カバレッジの取得 |
 * UIの変更を検知できるスナップショットテスト |
+* カバレッジの取得 |
 
 ---
 
@@ -42,25 +42,6 @@ Reactを
 
 #### Viewのテスト
 
----
-
-### カバレッジの取得
-
-
-```
-npm test -- --coverage
-```
-
-
-
-+++
-
-![カバレッジ一覧](https://camo.qiitausercontent.com/00a690cecc7ce975c0ca17712de1953191a49513/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3132383634352f35666366353033392d326264382d386632322d346263382d6133373733626331643861662e706e67)
-
-
-+++
-
-![ファイル単位](https://camo.qiitausercontent.com/bb03701306124e5da41eedb6ff5691e6975bc5fe/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3132383634352f31623736353038642d633262652d373137642d313061302d6666323932643266353266662e706e67)
 ---
 
 ### スナップショットテスト
@@ -120,6 +101,24 @@ jest --updateSnapshot
 
 ---
 
+### カバレッジの取得
+
+
+```
+npm test -- --coverage
+```
+
+
++++
+
+![カバレッジ一覧](https://camo.qiitausercontent.com/00a690cecc7ce975c0ca17712de1953191a49513/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3132383634352f35666366353033392d326264382d386632322d346263382d6133373733626331643861662e706e67)
+
+
++++
+
+![ファイル単位](https://camo.qiitausercontent.com/bb03701306124e5da41eedb6ff5691e6975bc5fe/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3132383634352f31623736353038642d633262652d373137642d313061302d6666323932643266353266662e706e67)
+---
+
 
 ### デモ
 
@@ -128,11 +127,13 @@ jest --updateSnapshot
 
 ### 参考
 
-* https://qiita.com/monisoi/items/44931e36c5f7b1f4e683
+* [Testing with Jest Snapshots: First Impressions](https://benmccormick.org/2016/09/19/testing-with-jest-snapshots-first-impressions/)
 
-* https://benmccormick.org/2016/09/19/testing-with-jest-snapshots-first-impressions/
+* [jestでテストカバレッジを見る](https://qiita.com/monisoi/items/44931e36c5f7b1f4e683)
 
+* [右手に感情、左手に数値 - カバレッジを味方にしよう](http://d.hatena.ne.jp/t-wada/20111207/coverage_is_your_friend)
 
 ---
+
 
 ### おわり
