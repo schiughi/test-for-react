@@ -39,24 +39,28 @@ Reactを
 
 +++
 
-##### テスト対象
-
-```javascript
-function sum(a, b) {
-  return a + b;
-}
-module.exports = sum;
-```
-
 ##### テストコード
 
 
 ```javascript
-const sum = require('./sum');
-
-describe('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+describe('Addition', () => {
+  it('knows that 2 and 2 make 4', () => {
+    expect(2 + 2).toBe(4);
+  });
 });
+```
+
++++
+
+```
+PASS  __tests__/state-functions.test.js
+  Addition
+    ✓ knows that 2 and 2 make 4 (5ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 passed, 0 total
+Time:        3.11s
 ```
 
 +++
