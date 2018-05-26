@@ -65,7 +65,7 @@ Reactを
 
 #### 例
 
-
++ 開発者「`<LinkToHome />`というコンポーネントのURLを変更しました!」
 
 +++
 
@@ -74,7 +74,7 @@ Reactを
 ```javascript
 it('renders correctly', () => {
   const tree = renderer
-    .create(<LinkToHome />)
+    .create(<LinktoHome />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
