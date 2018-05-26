@@ -93,6 +93,7 @@ Time:        3.11s
 
 ### スナップショットテスト
 
+@title[Some custom label]
 
 +++
 
