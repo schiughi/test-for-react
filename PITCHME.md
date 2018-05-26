@@ -1,17 +1,26 @@
-# test-for-react
 
-### こんにちは！
+# Mobx with React(Sample)
 
+---
 
-これはサンプルのスライド資料です。
+### ReactとMobxをどう組み合わせればいいんでしょうか
+
+### Sampleコードを見ていきましょう
+https://github.com/mobxjs/mobx-react-todomvc
 
 
 ---
 
+### View
 
-### 2枚目のスライド
+---
+
+
+### Model
 
 +++?code=TodoModel.js
+
+### ToDOModel.js
 
 +++
 
@@ -20,7 +29,7 @@
 ---
 
 
-### 3枚目のスライド
+### Controller
 
 
 ---
