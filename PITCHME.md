@@ -43,9 +43,11 @@ Reactを
 
 
 ```javascript
-describe('Addition', () => {
+const add = require('./add');
+
+describe('#add', () => {
   it('knows that 2 and 2 make 4', () => {
-    expect(2 + 2).toBe(4);
+    expect(add(2,2)).toBe(4);
   });
 });
 ```
@@ -54,7 +56,7 @@ describe('Addition', () => {
 
 ```
 PASS  __tests__/state-functions.test.js
-  Addition
+  #add
     ✓ knows that 2 and 2 make 4 (5ms)
 
 Test Suites: 1 passed, 1 total
