@@ -56,8 +56,9 @@ Reactを
 
 + 最初に実行したテストのアウトプットが保存され、二回目以降のテストは以前のスナップショットとの比較して一致していれば通過する。
 
-
 +++
+
++ コード
 
 ```javascript
 // Updated test case with a Link to a different address
@@ -69,11 +70,11 @@ it('renders correctly', () => {
 });
 ```
 
-
-
 +++
 
 ![スナップショット画面](https://facebook.github.io/jest/img/content/failedSnapshotTest.png)
+
+* -> 意図した変更であれば、スナップショットを上書き
 
 ---
 
