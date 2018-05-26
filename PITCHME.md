@@ -88,7 +88,10 @@ it('renders correctly', () => {
 
 +++
 
- -> 意図した変更であれば、スナップショットを上書き
+ レビュアー「OK!」
+```
+jest --updateSnapshot
+```
 
 +++
 
