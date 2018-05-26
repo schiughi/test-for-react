@@ -17,9 +17,8 @@ Reactを
 
 +++
 
-Facebook製のJavaScriptのテストツール。      
-`React`専用ではなく、    
-`Vue.js`や`Angular`でも利用できる。
++ Facebook製のJavaScriptのテストツール。    
+`React`専用ではなく、`Vue.js`や`Angular`でも利用できる。
 
 ---
 
