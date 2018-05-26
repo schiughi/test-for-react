@@ -54,7 +54,7 @@ Reactを
 
 +++
 
-### スナップショットテストって？
+#### スナップショットテストって？
 
 + UI が予期せず変更されていないかを確認するテスト | 
 
@@ -63,7 +63,7 @@ Reactを
 
 +++
 
-+ コード
+#### コード
 
 ```javascript
 // Updated test case with a Link to a different address
@@ -77,11 +77,13 @@ it('renders correctly', () => {
 
 +++
 
+#### スナップショット
+
 ![スナップショット画面](https://facebook.github.io/jest/img/content/failedSnapshotTest.png)
 
 +++
 
-* -> 意図した変更であれば、スナップショットを上書き
+ -> 意図した変更であれば、スナップショットを上書き
 
 +++
 
