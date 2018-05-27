@@ -11,7 +11,7 @@
 #### フロントエンド開発は常に副作用との戦い
 
 + サーバサイドよりもModelのライフサイクルが長い |
-+ 複数のイベントを捌かなければならない |
++ 多方面から発生するイベントを管理しなければならない |
    + (ユーザーアクション、非同期通信、プッシュ配信)
 
 
@@ -29,7 +29,8 @@
 
 #### Test?
 
-+ 今日話すこと |
++ 状態への副作用をテストとして明記する |
++ どうやって？ |
 
 ---
 
@@ -82,7 +83,7 @@ describe('#plus', () => {
 
 +++
 
-アウトプット
+##### アウトプット
 
 ```
 PASS  __tests__/state-functions.test.js
@@ -102,7 +103,46 @@ Time:        3.11s
 
 +++
 
-* Jestは自動的にリソースをMock化する
+##### テストコード
+
+```javascript
+jest.unmock('../Button')
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import TestUtils from 'react-addons-test-utils'
+import Button from '../Button'
+
+describe('Button', () => {
+  let props ={
+    labelText : "hoge",
+    onClick : jest.fn()
+  }
+
+  function setup(){
+    const instance = TestUtils.renderIntoDocument(
+      <Button {...props} />
+    )
+    const buttonNode = ReactDOM.findDOMNode(instance)
+    return {
+      instance,
+      buttonNode
+    }
+  }
+
+  describe('click', () =>{
+    it('calls onClick props', () => {
+      const {buttonNode} = setup()
+
+      TestUtils.Simulate.click(buttonNode)
+      expect(props.onClick).toBeCalled()
+    })
+  })
+})
+
+```
+@[1](テスト対象モジュールのmock化を解除する)
+
 
 +++
 
