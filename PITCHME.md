@@ -114,31 +114,31 @@ import TestUtils from 'react-dom/test-utils'
 import Button from '../Button'
 
 describe('Button', () => {
-  let props ={
+  let props = {
     labelText : "hoge",
     onClick : jest.fn()
-  }
+  };
 
   function setup(){
     const instance = TestUtils.renderIntoDocument(
       <Button {...props} />
-    )
-    const buttonNode = ReactDOM.findDOMNode(instance)
+    );
+    const buttonNode = ReactDOM.findDOMNode(instance);
     return {
       instance,
       buttonNode
-    }
+    };
   }
 
   describe('click', () =>{
     it('calls onClick props', () => {
-      const {buttonNode} = setup()
+      const {buttonNode} = setup();
 
-      TestUtils.Simulate.click(buttonNode)
-      expect(props.onClick).toBeCalled()
+      TestUtils.Simulate.click(buttonNode);
+      expect(props.onClick).toBeCalled();
     })
   })
-})
+});
 
 ```
 @[1](テスト対象モジュールのmock化を解除する)
