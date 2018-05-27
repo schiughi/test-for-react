@@ -143,6 +143,7 @@ jest --updateSnapshot
 
 +++
 
+テスト実行時に `--coverage`オプションを付けるだけ
 ```
 npm test -- --coverage
 ```
@@ -150,12 +151,17 @@ npm test -- --coverage
 
 +++
 
+レポートがhtml形式で出力される
+
 ![カバレッジ一覧](https://camo.qiitausercontent.com/00a690cecc7ce975c0ca17712de1953191a49513/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3132383634352f35666366353033392d326264382d386632322d346263382d6133373733626331643861662e706e67)
 
+ [jestでテストカバレッジを見る――qiita](https://qiita.com/monisoi/items/44931e36c5f7b1f4e683)
 
 +++
 
 ![ファイル単位](https://camo.qiitausercontent.com/bb03701306124e5da41eedb6ff5691e6975bc5fe/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3132383634352f31623736353038642d633262652d373137642d313061302d6666323932643266353266662e706e67)
+
+[jestでテストカバレッジを見る――qiita](https://qiita.com/monisoi/items/44931e36c5f7b1f4e683)
 
 +++
 
