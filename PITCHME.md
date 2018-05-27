@@ -82,6 +82,8 @@ describe('#plus', () => {
 
 +++
 
+アウトプット
+
 ```
 PASS  __tests__/state-functions.test.js
   #plus
