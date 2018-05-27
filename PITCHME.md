@@ -110,7 +110,7 @@ jest.unmock('../Button')
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import TestUtils from 'react-addons-test-utils'
+import TestUtils from 'react-dom/test-utils'
 import Button from '../Button'
 
 describe('Button', () => {
@@ -142,7 +142,8 @@ describe('Button', () => {
 
 ```
 @[1](テスト対象モジュールのmock化を解除する)
-
+@[5](DOMのテストをするには、`Enzyme`かReactのtestUtilsを使用する。)
+@[25-37](イベントをテストする)
 
 +++
 
