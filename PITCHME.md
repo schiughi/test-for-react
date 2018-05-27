@@ -105,7 +105,7 @@ Time:        3.11s
 
 ##### テストコード
 
-```javascript
+```jsx
 jest.unmock('../Button')
 
 import React from 'react'
